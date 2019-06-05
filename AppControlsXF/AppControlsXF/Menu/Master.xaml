@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:local="clr-namespace:AppControlsXF"
+             x:Class="AppControlsXF.Menu.Master">
+    <MasterDetailPage.Master>
+        
+        <ContentPage Title="Menu">
+            <StackLayout>
+                <Button Text="Activity Indicator" Clicked="GoActivityIndicatorPage"/>
+                <Button Text="Progregss Bar" Clicked="GoProgressBarPage"/>
+                <Button Text="Box View" Clicked="GoBoxViewPage"/>
+                <Button Text="Label" Clicked="GoLabelPage"/>
+            </StackLayout>
+            
+        </ContentPage>
+        
+    </MasterDetailPage.Master>
+
+    
+    <MasterDetailPage.Detail>
+
+        <local:MainPage />
+
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>
